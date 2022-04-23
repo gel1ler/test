@@ -16,23 +16,14 @@ const check = (array) => {
 let arr,
     n = 5,
     k = 0,
-    bool = true
+    bool = true,
+    a=1
 
 while (bool) {
     arr = Array(n).fill(0)
     for (let i = 1; i <= n; i++) {
         let r = Math.ceil(Math.random() * (n + 1 - i))
-        let count = 0, m = 0
-        while (count !== r) {
-            m++
-            if (arr[count] === 0) {
-                count++
-
-            }
-        }
-        console.log(m)
-        arr[m] = i
-        console.log(arr)
+        
     }
     if (check(arr)) {
         bool = false
